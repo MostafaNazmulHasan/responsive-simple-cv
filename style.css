@@ -1,0 +1,202 @@
+/* Universal Selector Starts Here */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Universal Selector Ends Here */
+
+/* Body Starts Here */
+body {
+  background-color: gainsboro;
+  font-family: "Roboto", sans-serif;
+}
+
+a:visited {
+  color: blue;
+}
+/* Body Ends Here */
+
+/* Container Starts Here */
+.container {
+  max-width: 62.5em;
+  background-color: lightblue;
+  margin: 0 auto;
+  padding: 1.25em;
+  color: blue;
+}
+/* Container Ends Here */
+
+/* Header Starts Here */
+
+
+.header-text {
+  float: left;
+  padding: 1.875em;
+}
+.header-contact {
+  float: right;
+  padding: 1.875em;
+}
+
+.header-contact a {
+  text-decoration: none;
+}
+
+.header-contact a:hover {
+  background-color: white;
+}
+
+.header-contact p {
+  margin-bottom: 0.313em;
+  padding: 0.125em;
+}
+
+.header-title {
+  margin: 0.313em ;
+}
+
+/* Profile Picture Starts Here */
+.profile-picture {
+  width: 6.25em;
+  height: 7.5em;
+  border: 0.125em solid white;
+  border-radius: 9.375em;
+  float: left;
+}
+/* Profile Picture Ends Here */
+/* Header Ends Here */
+
+/* Clearing Div Starts */
+.div-clear {
+  clear: both;
+}
+/* Clearing Div Ends */
+
+/* Horizontal Rule Starts Here */
+hr {
+  border: 0.063em solid black;
+}
+/* Horizontal Rule Ends Here  */
+
+/* Personal Information Section  */
+.personal-information{
+margin: 1.25em;
+}
+
+.title{
+  float: left;
+  width: 30%;
+}
+
+.content{
+  float: right;
+  padding: 0.625em;
+  width: 60%;
+}
+/* Personal Information Section Ends Here */
+
+/* Skills Section starts here */
+
+.skills {
+  margin: 1.25em;
+}
+.skills-list ol{
+  padding: 0;
+  margin: 0.938em;
+}
+/* Skills Section Ends Here */
+
+/* Footer Section Starts Here */
+footer {
+  padding: 1.25em;
+  text-align: center;
+  justify-content: center;
+  color: blue;
+  margin-top: 1.25em;
+}
+.footer-social-media-list ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.footer-social-media-list ul li{
+  margin: 0.625em;
+  list-style-type: none;
+
+}
+.footer-social-media-list ul li a{
+  text-decoration: none;
+  color: blue;
+  font-size: 1.25em;
+}
+.footer-social-media-list ul li a:hover {
+  background-color: white;
+}
+
+
+/* Responsiveness Starts Here */
+@media (max-width: 768px) {
+  .header-text {
+    float: none;
+    text-align: center;
+  }
+  .header-contact {
+    float: none;
+    text-align: center;
+  }
+  .profile-picture {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .title, .content{
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-text {
+    font-size: 1.25em;
+  }
+  .header-contact {
+    font-size: 1.25em;
+  }
+  .profile-picture {
+    width: 5em;
+    height: 6em;
+  }
+  .title, .content{
+    font-size: 0.938em;
+  }
+  .skills-list ol{
+    font-size: 0.938em;
+  } 
+  
+}
+
+@media screen and (max-width: 320px) {
+  .header-text {
+    font-size: 1em;
+  }
+  .header-contact {
+    font-size: 1em;
+  }
+  .profile-picture {
+    width: 4em;
+    height: 5em;
+  }
+  .title, .content{
+    font-size: 0.75em;
+  }
+  .skills-list ol{
+    font-size: 0.75em;
+  }
+  .header-title {
+    font-size: 1.25em;
+  } 
+  
+}
+
+/* Responsiveness Ends Here */
